@@ -1,0 +1,104 @@
+/* IMPORTACIÓN DE FUENTES */
+
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Pixelify+Sans:wght@400..700&display=swap');
+
+/* RESET DE ESTILOS */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ESTILOS GENERALES */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    text-align: center;
+    background-color: #B2B0E8;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #3B38A0;
+    font-weight: 500;
+    padding: 1rem 0rem;
+    font-family: "Jersey 10", sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    color: #3B38A0;
+    font-weight: 200;
+    padding: 1rem 0rem;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 1.3rem;
+}
+
+/* ESTILOS HEADER */
+
+header {
+    background-color: #1A2A80;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.header__title {
+    padding: 2rem;
+    color:#EEEEEE;
+}
+
+/* ESTILOS MAIN */
+
+main {
+    margin: 0rem 2rem;
+    flex: 1;
+}
+
+/* ESTILOS DE PRUEBA PARA MÓDULOS */
+
+.card {
+    background-color: #3B38A0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card__subtitle {
+    color:#EEEEEE;
+}
+
+.card__element {
+    background-color: #7A85C1;
+}
+
+/* ESTILOS MODULO 1 */
+
+/* ESTILOS MODULO 2 */
+
+/* ESTILOS FOOTER */
+footer {
+    background-color: #1A2A80; 
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.footer__fonts {
+    color: #B2B0E8;
+}
