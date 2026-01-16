@@ -2,15 +2,15 @@
 
 ## 1.DIAGNOSTICO TÉCNICO DE PROBLEMA
 
-Los problemas presentes en los proyectos de Pixel Perfect Studio debido a la falta de una metodología de organización y modularización de estilos ha probocado:
+Los problemas presentes en los proyectos de Pixel Perfect Studio son debido a la falta de una metodologías de organización y modularización de estilos, lo cual ha probocado los siguientes problemas:
 
-- conflictos entre estilos: muchos componentes y clases presentes en sus páginas web y documentación son genericos y se repiten, esto genera conflictos debido a que hay más de un estilo que aplica a diferentes etiquetas o secciones, dejando solo los últimos presentes, ya que, CSS funciona en sistema cascada.
+- conflictos entre estilos: muchos componentes y clases presentes en sus páginas web y documentación son genéricos y se repiten, esto genera conflictos debido a que hay más de un estilo que aplica a diferentes etiquetas o secciones, dejando solo los últimos presentes, ya que, CSS funciona con un sistema de cascada (cascade).
 
-- dicultad para escalar componentes: no hay un orden claro, por lo que no se pueden diferenciar los componentes para ser reutilizados, generando un programación de tipo "espagetti".
+- dicultad para escalar componentes: no hay un orden claro, por lo que no se pueden diferenciar los componentes para ser reutilizados, generando una programación de tipo "espagetti".
 
 - inconsistencias visuales: los elementos, ya sea etiquetas, clases y estilos, al ser generados por diversos programadores, no poseen una estructura fácil de seguir, esto lleva a incosistencias visuales a nivel de diseño y de estructura.
 
-- perdida de tiempo: en un mundo comeptitivo, en Pixel Pefect Studio desarrolla muchos proyectos consecutivos, requiere de optimizar sus tiempos y sacar mayor fruto de ello. Los conflictos en los componentes llevan a que los desarrolladores tengan que invertir mucho tiempo en en comprender el código.
+- perdida de tiempo: en un mundo competitivo, en Pixel Pefect Studio se desarrollan muchos proyectos consecutivos, requiere de optimizar sus tiempos y sacar mayor fruto de ello. Los conflictos en los componentes llevan a que los desarrolladores tengan que invertir mucho tiempo en comprender el código.
 
 ## 2.EVALUACIÓN Y JUSTIFICACIÓN DE METODOLOGÍA
 
@@ -19,15 +19,15 @@ Los problemas presentes en los proyectos de Pixel Perfect Studio debido a la fal
 
 Hay tres metodologías que podrían ser aplicadas a este caso:
 
-BEM (Block, Element, Modifier): Este sistema trabaja por bloque, elemento y modificador (form / button / button--submit) útil para modularizar componentes permitiendo ser reutilizados y mantiene elementos aninados, pero muchos componente pueden llevar a generación de clases muy complejas si es que hay muchos elementos anidados.
+BEM (Block, Element, Modifier): Este sistema trabaja por bloque, elemento y modificador (form / button / button--submit) útil para modularizar componentes permitiendo ser reutilizados y mantieniendo los elementos aninados, pero muchos componentes pueden llevar a generación de clases muy complejas si es que hay muchos elementos anidados.
 
 OOCSS: Este sistema sugiere separar la estructura de la piel (skin). En este caso un componente tendría sus características de tipo estructurales (margin, padding, border, etc.) pero en otro apartado (skin) tendríamos todos sus modificadores (background-color, color, carácteristicas de fuentes, etc.), pero vuelve más complejo HTML pues las etiquetas requieren multiples clases para un solo elemento.
 
-SMACSS: Este sistema propone organizar los componentes en niveles, estas serían: bases (reset, base, tipografías), layouts (header, footer, sidebar), module (cards, accordion, form), state (estados para elementos interactivos), theme (dark-theme, light-theme), si bien organiza muchas características de las componentes, pero su subjetividad genera una línea borrosa respecto a la organizavión de ciertos componentes, y en proyectos de pequeña envergadura, fragmenta inecesariamente los componentes.
+SMACSS: Este sistema propone organizar los componentes en niveles, estas serían: bases (reset, base, tipografías, etc.), layouts (header, footer, sidebar, etc.), module (cards, accordion, form, etc.), state (estados para elementos interactivos), theme (dark-theme, light-theme, etc.), si bien organiza muchas características de las componentes, su subjetividad genera una línea borrosa respecto a la organizavión de ciertos componentes, y en proyectos de pequeña envergadura, los fragmenta inecesariamente.
 
 2-
 
-La elección más optima, sería una hibrido entre la metodología BEM y SMACSS. Esto se debe a que con la anidación BEM el código sería más fácil de leer, ya que, componentes padres e hijos están relacionados mendiante sus clases y la meotodógia modular de SMACSS nos permite dar una organización a nuestros componentes, basados en sus características, ya sean, componentes base, layouts, modulos, estados, temas, los cuales serían independientes y apicables en todo el contenido. Una cosa rescatable de OOCSS es la cualidad de poseer skins, pero en este caso, lo aplicaremos conforme as SMACSS que trabaja por "theme" la cual sería una clasé de modifier pero independiente de la clase.
+La elección más optima, sería una híbrido entre la metodología BEM y SMACSS. Esto se debe a que con la anidación BEM el código sería más fácil de leer, ya que, componentes padres e hijos están relacionados mendiante sus clases y la meotodógia modular de SMACSS nos permite dar una organización a nuestros componentes, basados en sus características, ya sean, componentes base, layouts, modulos, estados, temas, los cuales serían independientes y apicables en todo el contenido. Una cosa rescatable de OOCSS es la cualidad de poseer skins, pero en este caso, lo aplicaremos conforme a SMACSS que posee "themes" la cual sería una clasé de modifier pero independiente de la clase del módulo.
 
 ## 3.DISEÑO E IMPLEMENTACIÓN TÉCNICA
 
