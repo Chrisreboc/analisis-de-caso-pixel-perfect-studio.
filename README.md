@@ -33,7 +33,7 @@ La elección más optima, sería una hibrido entre la metodología BEM y SMACSS.
 
 Acceso a repositorio Github: https://github.com/Chrisreboc/analisis-de-caso-pixel-perfect-studio..git
 
-deploy github: por añadir.
+deploy github: https://chrisreboc.github.io/analisis-de-caso-pixel-perfect-studio./
 
 ## 4.DOCUMENTACIÓN TÉCNICA INTERNA
 
