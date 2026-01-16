@@ -52,7 +52,7 @@ p {
 
 /* ESTILOS HEADER */
 
-header {
+.header {
     background-color: #1A2A80;
     font-size: 3rem;
     text-align: center;
@@ -65,7 +65,7 @@ header {
 
 /* ESTILOS MAIN */
 
-main {
+.main-container {
     margin: 0rem 2rem;
     flex: 1;
 }
@@ -91,7 +91,7 @@ main {
 /* ESTILOS MODULO 2 */
 
 /* ESTILOS FOOTER */
-footer {
+.footer {
     background-color: #1A2A80; 
     text-align: center;
     margin-top: 1rem;
