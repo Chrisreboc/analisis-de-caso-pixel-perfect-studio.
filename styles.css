@@ -76,10 +76,15 @@ p {
     background-color: #3B38A0;
     border-radius: 10px;
     overflow: hidden;
+    margin: 1rem 0rem;
 }
 
 .card__subtitle {
     color:#EEEEEE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .card__element {
@@ -89,6 +94,8 @@ p {
 /* ESTILOS MODULO 1 */
 
 /* ESTILOS MODULO 2 */
+
+
 
 /* ESTILOS FOOTER */
 .footer {
