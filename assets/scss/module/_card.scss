@@ -1,11 +1,13 @@
+@use '../themes/default-theme' as v;
+
 .card {
-    background-color: #3B38A0;
+    background-color: v.$color-secondary;
     border-radius: 10px;
     overflow: hidden;
     margin: 1rem 0rem;
 
     &__subtitle {
-        color: #EEEEEE;
+        color: v.$color-wfont;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -13,6 +15,6 @@
     }
 
     &__element {
-        background-color: #7A85C1;
+        background-color: v.$color-tertiary;
     }
 }

@@ -1,7 +1,11 @@
+@use '../themes/default-theme' as v;
+
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Pixelify+Sans:wght@400..700&display=swap');
 
+
+
 h1, h2, h3, h4, h5, h6, label {
-    color: #3B38A0;
+    color: v.$color-main;
     font-weight: 500;
     padding: 1rem 0rem;
     font-family: "Jersey 10", sans-serif;
@@ -24,7 +28,7 @@ label {
 }
 
 p {
-    color: #3B38A0;
+    color: v.$color-main;
     font-weight: 200;
     padding: 1rem 0rem;
     font-family: "Pixelify Sans", sans-serif;
@@ -34,7 +38,7 @@ p {
 button {
     font-family: "Pixelify Sans", sans-serif;
     font-size: 1rem;
-    color:#EEEEEE;
+    color: v.$color-wfont;
 }
 
 ::placeholder {

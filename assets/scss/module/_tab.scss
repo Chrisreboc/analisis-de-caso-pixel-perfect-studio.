@@ -1,8 +1,10 @@
+@use '../themes/default-theme' as v;
+
 .tabs {
 
   &__link {
-    background-color: #3B38A0;
-    color: #EEEEEE;
+    background-color: v.$color-main;
+    color: v.$color-wfont;
     float: left;
     border: none;
     outline: none;
@@ -14,7 +16,7 @@
   }
 
   &__link:hover {
-    background-color: #1A2A80;
+    background-color: v.$color-secondary;
   }
 
   &__panel {

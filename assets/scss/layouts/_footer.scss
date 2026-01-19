@@ -1,11 +1,14 @@
+@use '../themes/default-theme' as v;
+
+
 .footer {
-    background-color: #1A2A80; 
+    background-color: v.$color-secondary; 
     text-align: center;
     margin-top: 1rem;
     padding: 1rem;
     font-size: 1.2rem;
 
     &__fonts {
-        color: #B2B0E8;
+        color: v.$color-fourth;
     }
 }

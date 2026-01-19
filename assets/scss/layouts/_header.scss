@@ -1,13 +1,15 @@
 /* ESTILOS HEADER */
 
+@use '../themes/default-theme' as v;
+
 .header {
-    background-color: #1A2A80;
+    background-color: v.$color-secondary;
     font-size: 3rem;
     text-align: center;
 
     &__title {
         padding: 2rem;
-        color: #EEEEEE;
+        color: v.$color-wfont;
 
     }
 }

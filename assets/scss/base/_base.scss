@@ -1,4 +1,5 @@
 /* ESTILOS GENERALES */
+@use '../themes/default-theme' as v;
 
 html,
 body {
@@ -7,7 +8,7 @@ body {
 
 body {
     text-align: center;
-    background-color: #B2B0E8;
+    background-color: v.$color-fourth;
     display: flex;
     flex-direction: column;
 }
