@@ -1,4 +1,35 @@
-// MODULO 1 TABHEADER
+// MODULO 1 TAB
+
+function openPage(pageName, elmnt, color) {
+  // Ocultar todos los paneles
+  const panels = document.getElementsByClassName('tabs__panel');
+  for (let i = 0; i < panels.length; i++) {
+    panels[i].classList.remove('tabs__panel--active');
+  }
+
+  // Remover clase activa de todos los botones
+  const buttons = document.getElementsByClassName('tabs__link');
+  for (let i = 0; i < buttons.length; i++) {
+    buttons[i].style.backgroundColor = '';
+  }
+
+  // Mostrar el panel seleccionado
+  const selectedPanel = document.getElementById(pageName);
+  if (selectedPanel) {
+    selectedPanel.classList.add('tabs__panel--active');
+  }
+
+  // Marcar el botón como activo
+  elmnt.style.backgroundColor = color;
+}
+
+// Abrir la pestaña por defecto al cargar
+document.addEventListener('DOMContentLoaded', function() {
+  const defaultOpen = document.getElementById('defaultOpen');
+  if (defaultOpen) {
+    openPage('News', defaultOpen, 'green');
+  }
+});
 
 // MODULO 2 SLIDESHOW
 

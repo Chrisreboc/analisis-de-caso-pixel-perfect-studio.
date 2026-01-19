@@ -1,11 +1,16 @@
 //IMPORTACIÓN BASES
-@import "base/typography.scss";
-@import "base/reset.scss";
-@import "base/base.scss";
+@use "base/typography.scss";
+@use "base/reset.scss";
+@use "base/base.scss";
 
 //IMPORTACIÓN LAYOUTS
 
-@import "layouts/header.scss";
-@import "layouts/main-container.scss";
-@import "layouts/footer.scss";
+@use "layouts/header.scss";
+@use "layouts/main-container.scss";
+@use "layouts/footer.scss";
 
+//IMPORTACIÓN MÓDULOS
+
+@use "module/card";
+@use "module/tab";
+@use "module/form";
