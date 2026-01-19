@@ -37,10 +37,42 @@ deploy github: https://chrisreboc.github.io/analisis-de-caso-pixel-perfect-studi
 
 ## 4.DOCUMENTACIÓN TÉCNICA INTERNA
 
-Por añadir.
+La nueva metodología cuenta con un sistema de anidado BEM, en este caso hay componentes padre los cuales dan nombres a los hijos, esto facilita el reconocer a que módulo corresponde cada componente y que función cumplen, junto con un sistema de organización SMACSS basado en:
+
+- base: Base contiene todos los elementos que son base de la página, es decir, que deben estar cargados antes de ingresar cualquiera sea el contenido. Sus componentes son un reset de estilos (reset.scss), una base (base.scss) que contiene las configuraciones generales de body, html, headlings, parrafes, etc. Y tipografías importadas (typography.scss) en dónde se enceuntran las tipografías de la página.
+
+- layouts: Layouyts contiene todas las características relacionadas a la estructuración o configuración visual de la página, es decir, cuenta con las características del encabezado (header.scss), contenedor principal (main-container.scss) y pie de página (footer.scss).
+
+- module: Module es dónde se almacenan los estilos de los módulos, ya sean, accordion, forms, cards, slodeshows, tabs, etc. En este caso cómo ejemplo contiene un módulo card, slideshow y tab que están presentes en el display de la página y que se pueden reutilizar.
+
+- theme: Theme contiene los temas aplicables a la página los cuales nos ayudan a customizar los colores de componentes o de temas generales de la página, es decir en este caso se agregaron 2 temas: el tema predeterminado (theme-default) y un tema anaranjado (theme-orange).
+
+- styles.scss: Este documento importa en un orden lógico las características de la página, ya sea, los reset, las bases, tipografías, layouts, módulos y theme. En él los desarrolladores pueden implementar los estilos de nuevos módulos que puedan desarrollar o importar desde otras librerías.
+
+las funciones que cumplen estos apartados son:
+
+ - reset: contiene el reset de estilos, usualmente este archivo no será modificado, pero si puede ser reutilizado en diversos proyectos.
+
+- base: contiene las características de los elementos base de la página, este apartado lo más probable es que tampoco sea modificado, ya que otorga una base para el proyecto y se puede reutilizar, en esta están presentes las características del html, body, headlings y parrefes (en los que estos contendran las fuentes principales que represeten a la empresa y tamaños por defecto para estas etiquetas).
+
+- tipografía: contiene tipografías importadas, en esta carpeta los desarrolladores pueden ingresar nuevas fuentes según lo requiera un proyecto y modificar "base" con las nuevas fuentes de ser necesario, todo depende del proyecto.
+
+- header: header contiene el display del encabezado, si bien en este ejemplo es simple que contiene solo un título, los desarrolladores, pueden en el agregar un formato que se pueda repetir a largo de los proyectos, ya sea si estos contienen botones, barras de busqueda o redirecciones.
+
+-main-container: este contiene el display de contenidos dentro de la página, en este caso posee un display estilo flex que se organiza en columnas y mantiene el contenido centrado, lo que permite al desarrollador agregar módulos y que estos de adapten al formato de una forma simple y rápida, y de estar dentro de un módulo card, o un módulo vacio, poder organizarlos uno a lado de otro, con las características que deseen.
+
+- footer: contiene las características del pie de página, el formato es simple de momento, pero se puede establecer uno que contenga los apartados requeridos, ya sea contactos, ayuda, servicios, formularios, or redirecciones especificas. está diseñado para siempre estár al pie de página no importa si hay poco o mucho contenido.
+
+- module: en esta sección están todos los estilos de módulos que los desarrolladores puedan implementar, Ya sea un formulario, tarjetas, mostradores de imágenes, etc. Con cada módulo dasarrollado, al trabajar html es solo cosa de utilizar las clases de dicho módulo y el moódulo se adaptará automáticamente a sus estilos.
+
+- theme: Este contiene los temas aplicables, en este apartado los desarrolladores podrán implementar sus propios temás personalizados, que puedan afectar a los diferentes componentes o módulos de la página, esto también deja abierta la puerta a skins de estilo OOCSS incluso si este sistema no considera ese formato de momento, o características de implementación de colores individuales, estilo primary, danger, warning, etc.
 
 ## 5. REFLEXIÓN FINAL DEL PROCESO
 
-Por añadir.
+1. Los desafíos que se presentaron al aplicar esta metodología a un proyecto fueron desarrollar un layout, lejos de todo el contenido o módulos resultaron eficientes rápidamente, pero en un principio al desarrollar el layout, ciertas cosas no funcionaban o no seguían el orden esperado, pero al establecer reglas claras al layout todo fúncionó de maravilla. Otro desafío fue agregar temas que pudieran afectar a todo el contenido o solo a algunas componentes, pero la implementación de variables como colores (var) facilitaron posteriormente hacer cualquier tipo de tema e implementarlo, fue solo cosa de buscar una paleta de colores adecuada.
 
+2. La metodología mantendrá un orden de todos los componentes y los hará fácil de comprender y encontrar, permitiendo que sean reutilizados y que los temas sean implementados con facilidad , que pueda crecer a tener colores o tamaños de fuentes específicos y acercarlo más a las características de una librería o framework según lo requiera.
 
+3. Al implementar esta metodología, los desarrolladores podrán montar rápidamente los diversos módulos que requieran, habrá un orden en sus estilos, se comprenderá qué estilos de componentes son hijos, ya que, estarán relacionados por clase y por anidación, esto ahorrará tiempo en lectura de código y de estilos no importa si no es el mismo desarrollador trabajando en x proyecto. También permitirá a los desarrolladores reutilizar módulos con rápidez los cuales tendrán sus estilos implementados automáticamente, no requeriran del crear ID a menos de que sean inputs específicos o de crear clases innecesarias, pues estás están definidas por módulo lo que evita el duplicado de estilos o código aún más mediante SASS.
+
+Además permitirá trabajar temas los cuales se podrán implementar de página completa o simplemente para un módulo específico. Creación de propios temas según lo requiera el proyecto, añadir nuevos módulos que posteriormente serán reutilizables, y crecimiento en caso de que se requieran colores específicos para componentes específicas, si bien el ejemplo presente solo posee temas, da la posibilidad a crecer en esa dirección, incluso en la creación de tamaños y peso de fuentes aplicados por clase.
