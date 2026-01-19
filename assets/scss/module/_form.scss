@@ -1,0 +1,33 @@
+.form {
+    text-align: center;
+
+    &__label {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    &__inputs {
+        border-radius: 10px;
+        width: 250px;
+        height: 25px;
+        border-color: #B2B0E8;
+        border-width: 2px;
+    }
+    
+    &__textarea {
+        border-radius: 10px;
+        width: 250px;
+        height: 100px;
+        border-color: #B2B0E8;
+        border-width: 2px;
+    }
+
+    &__button {
+        border-radius: 10px;
+        height: 40px;
+        width: 250px;
+        margin: 1rem 0;
+        border: none;
+        background-color: #3B38A0;
+    }
+}

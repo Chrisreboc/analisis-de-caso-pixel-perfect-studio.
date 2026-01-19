@@ -1,0 +1,18 @@
+.card {
+    background-color: #3B38A0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1rem 0rem;
+
+    &__subtitle {
+        color: #EEEEEE;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__element {
+        background-color: #7A85C1;
+    }
+}

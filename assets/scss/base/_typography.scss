@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Pixelify+Sans:wght@400..700&display=swap');
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, label {
     color: #3B38A0;
     font-weight: 500;
     padding: 1rem 0rem;
@@ -19,10 +19,25 @@ h3 {
     font-size: 1.5rem;
 }
 
+label {
+    font-size: 1.5rem;
+}
+
 p {
     color: #3B38A0;
     font-weight: 200;
     padding: 1rem 0rem;
     font-family: "Pixelify Sans", sans-serif;
     font-size: 1.3rem;
+}
+
+button {
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 1rem;
+    color:#EEEEEE;
+}
+
+::placeholder {
+    font-family: "Pixelify Sans", sans-serif;
+    text-align: center;
 }

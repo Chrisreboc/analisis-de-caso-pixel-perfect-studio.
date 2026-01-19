@@ -42,14 +42,111 @@
 
         <!-- MODULO 1  FULL PAGE TAB-->
 
+        <div class="tab">
+            <!--BOTONES-->
 
+            <!--Boton Bienvenidos-->
+            <button class="tabs__link" onclick="openPage('Home', this, '#7A85C1')">
+                Bienvenidos
+            </button>
 
+            <!--Boton Novedades-->
+            <button class="tabs__link" onclick="openPage('News', this, '#7A85C1')" id="defaultOpen">
+                Novedades
+            </button>
 
+            <!--Boton Contáctanos-->
+            <button class="tabs__link" onclick="openPage('Contact', this, '#7A85C1')">
+                Contáctanos
+            </button>
 
+            <!--Boton Nosotros-->
+            <button class="tabs__link" onclick="openPage('About', this, '#7A85C1')">
+                Nosotr@s
+            </button>
+
+            <!--CONTENIDO BOTONES-->
+
+            <!--Contenido Bienvenidos-->
+            <div id="Home" class="tabs__panel tabs__panel--home">
+                <h3>Bienvenidos</h3>
+                <p>
+                    En PixelPerfect Studio iluminamos mundos imaginarios: somos un
+                    equipo de devs, artistas y narradores que diseña experiencias
+                    inmersivas donde tus decisiones cambian la historia. Nuestro taller
+                    vive de prototipos tempranos, pruebas con la comunidad y ajustes
+                    constantes; creemos que el mejor juego se co-crea. Pasa, ponte
+                    cómodo, toma un café y explora los mundos que estamos puliendo para
+                    que te sorprendan en cada partida.
+                </p>
+            </div>
+            <!--Contenido Novedades-->
+            <div id="News" class="tabs__panel tabs__panel--news">
+                <h3>Novedades</h3>
+                <p>
+                    Acabamos de revelar "Luz de Mareas", una aventura cooperativa
+                    ambientada en ciudades flotantes; la beta cerrada inicia el próximo
+                    mes con matchmaking cruzado. "Nébula Roja" recibe hoy un parche con
+                    modo foto cinemático, mejoras en IA de escuadrón y soporte para
+                    mandos hápticos. También publicamos el diario de desarrollo de
+                    "Senderos de Hielo", nuestro survival táctico: mostramos el nuevo
+                    sistema de clima dinámico, fauna migratoria y crafteo simplificado
+                    para partidas cortas. Si quieres probar antes que nadie, suscríbete
+                    al programa de playtests comunitarios.
+                </p>
+            </div>
+            <!--Contenido Contactános-->
+            <div id="Contact" class="tabs__panel tabs__panel--contact">
+                <h3>Contáctanos</h3>
+                <p>
+                    ¿Tienes una idea o quieres colaborar? Escríbenos a
+                    hola@pixelperfect.studio o agenda una visita: siempre tenemos café
+                    listo y un controlador extra para probar prototipos. Déjanos tus
+                    datos y nos pondremos en contacto para escucharte.
+                </p>
+
+                <!--Formulario de contacto-->
+
+                <form class="form">
+                    <!--Nombre-->
+                    <label class="form__label" for="name">Nombre</label>
+                    <input class="form__inputs" id="name" name="name" type="text"
+                        placeholder="Añade tu nombre o nickname" />
+
+                    <!--Correo-->
+                    <label class="form__label" for="email">Correo electrónico</label>
+                    <input class="form__inputs" id="email" name="email" type="email"
+                        placeholder="Añade tu correo electrónico" />
+
+                    <!--Mensaje-->
+                    <label class="form__label" for="message">Mensaje</label>
+                    <textarea class="form__textarea" id="message" name="message" rows="4"
+                        placeholder="Cuéntanos tu idea, feedback o propuesta"></textarea>
+                    <br />
+
+                    <!--Enviar-->
+                    <button class="form__button" type="submit">Enviar</button>
+                </form>
+
+            </div>
+
+            <!--Contenido Nosotros-->
+            <div id="About" class="tabs__panel tabs__panel--about">
+
+                <h3>Nosotr@s</h3>
+                <p>
+                    Nacimos como un grupo de amigos en una game jam de 48 horas y hoy
+                    somos un estudio independiente que apuesta por narrativas
+                    inclusivas, música original y mecánicas accesibles. Creemos en
+                    juegos que se sientan vivos, que respeten tu tiempo y que te dejen
+                    una historia que recordar incluso cuando apagas la consola. Nuestro
+                    mantra: prototipa rápido, prueba con jugadores reales, itera sin
+                    miedo y publica cuando el mundo esté listo.
+                </p>
+            </div>
+        </div>
 
         <!-- MODULO 2 SLIDESHOW CARROUSEL-->
-
-        <!-- BEM  BLOQUE, ELEMENTO, MoDIFICADOR-->
 
         <div class="card">
             <h2 class="card__subtitle">Algunos Proyectos</h2>
@@ -62,7 +159,9 @@
                         <div class="slideshow__slide slideshow__slide--fade">
                             <div class="slideshow__number">1 / 3</div>
                             <img src="./assets/img/auto.jpg" alt="Digitalizacion" class="slideshow__image">
-                            <div class="slideshow__caption"><p>Digital Arts</p></div>
+                            <div class="slideshow__caption">
+                                <p>Digital Arts</p>
+                            </div>
                         </div>
 
                         <!-- Diapositiva 2 -->
