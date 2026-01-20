@@ -41,6 +41,11 @@ button {
   text-align: center;
 }
 
+span {
+  font-family: "Pixelify Sans", sans-serif;
+  color: #EEEEEE;
+}
+
 /* RESET DE ESTILOS */
 * {
   margin: 0;
