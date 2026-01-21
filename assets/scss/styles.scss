@@ -1,0 +1,17 @@
+//IMPORTACIÓN BASES
+@use "base/typography.scss";
+@use "base/reset.scss";
+@use "base/base.scss";
+
+//IMPORTACIÓN LAYOUTS
+
+@use "layouts/header.scss";
+@use "layouts/main-container.scss";
+@use "layouts/footer.scss";
+
+//IMPORTACIÓN MÓDULOS
+
+@use "module/card";
+@use "module/tab";
+@use "module/form";
+@use "module/slideshow";

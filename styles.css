@@ -52,7 +52,7 @@ p {
 
 /* ESTILOS HEADER */
 
-header {
+.header {
     background-color: #1A2A80;
     font-size: 3rem;
     text-align: center;
@@ -65,21 +65,26 @@ header {
 
 /* ESTILOS MAIN */
 
-main {
+.main-container {
     margin: 0rem 2rem;
     flex: 1;
 }
 
-/* ESTILOS DE PRUEBA PARA MÓDULOS */
+/* ESTILOS CARD */
 
 .card {
     background-color: #3B38A0;
     border-radius: 10px;
     overflow: hidden;
+    margin: 1rem 0rem;
 }
 
 .card__subtitle {
     color:#EEEEEE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .card__element {
@@ -88,10 +93,125 @@ main {
 
 /* ESTILOS MODULO 1 */
 
-/* ESTILOS MODULO 2 */
+/* ESTILOS MODULO 2 SLIDESHOW*/
+
+.slideshow {
+  padding: 1.2rem;
+}
+
+.slideshow__container {
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
+  box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.54);
+  -webkit-box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.54);
+  -moz-box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.54);
+}
+
+.slideshow__slide {
+  display: none;
+}
+
+.slideshow__slide--fade {
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+.slideshow__image {
+  width: 100%;
+}
+
+.slideshow__number {
+  color: #EEEEEE;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.slideshow__caption {
+  background-color: rgba(26, 42, 128, 0.8);
+  color: #EEEEEE;
+  font-size: 18px;
+  padding: 10px 0px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.slideshow__nav {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #EEEEEE;
+  background-color: rgba(59, 56, 160, 0.8);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  border: none;
+}
+
+.slideshow__nav:hover {
+  background-color: rgba(26, 42, 128, 0.8);
+}
+
+.slideshow__nav--prev {
+  left: 0;
+}
+
+.slideshow__nav--next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.slideshow__indicators {
+  text-align: center;
+  padding: 15px 0;
+}
+
+.slideshow__dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #3B38A0;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.slideshow__dot:hover,
+.slideshow__dot--active {
+  background-color: #1A2A80;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+
+  .slideshow__nav,
+  .slideshow__caption {
+    font-size: 11px;
+  }
+}
+
 
 /* ESTILOS FOOTER */
-footer {
+.footer {
     background-color: #1A2A80; 
     text-align: center;
     margin-top: 1rem;

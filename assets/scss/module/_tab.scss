@@ -1,0 +1,52 @@
+@use '../themes/default-theme' as v;
+
+.tabs {
+
+  &__link {
+    background-color: v.$color-main;
+    color: v.$color-wfont;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 1.5rem;
+    width: 25%;
+    font-family: "Jersey 10", sans-serif;
+  }
+
+  &__link:hover {
+    background-color: v.$color-secondary;
+  }
+
+  &__panel {
+    display: none;
+    padding: 2rem;
+    border-radius: 0px 0px 10px 10px;
+    overflow: hidden;
+  }
+
+  &__panel--active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__panel--home {
+    background-image: url(../img/tabheader_img_1.png);
+  }
+
+  &__panel--news {
+    background-image: url(../img/tabheader_img_2.png);
+  }
+
+  &__panel--contact {
+    background-image: url(../img/tabheader_img_3.png);
+  }
+
+  &__panel--about {
+    background-image: url(../img/tabheader_img_4.png);
+  }
+
+}

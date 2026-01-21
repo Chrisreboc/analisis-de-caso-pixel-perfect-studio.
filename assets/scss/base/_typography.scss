@@ -1,0 +1,52 @@
+@use '../themes/default-theme' as v;
+
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Pixelify+Sans:wght@400..700&display=swap');
+
+
+
+h1, h2, h3, h4, h5, h6, label {
+    color: v.$color-main;
+    font-weight: 500;
+    padding: 1rem 0rem;
+    font-family: "Jersey 10", sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+label {
+    font-size: 1.5rem;
+}
+
+p {
+    color: v.$color-main;
+    font-weight: 200;
+    padding: 1rem 0rem;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 1.3rem;
+}
+
+button {
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 1rem;
+    color: v.$color-wfont;
+}
+
+::placeholder {
+    font-family: "Pixelify Sans", sans-serif;
+    text-align: center;
+}
+
+span {
+    font-family: "Pixelify Sans", sans-serif;
+    color: v.$color-wfont;
+}

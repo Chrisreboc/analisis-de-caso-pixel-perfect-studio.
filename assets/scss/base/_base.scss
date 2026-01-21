@@ -1,0 +1,14 @@
+/* ESTILOS GENERALES */
+@use '../themes/default-theme' as v;
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    text-align: center;
+    background-color: v.$color-fourth;
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,20 @@
+@use '../themes/default-theme' as v;
+
+.card {
+    background-color: v.$color-secondary;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1rem 0rem;
+
+    &__subtitle {
+        color: v.$color-wfont;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__element {
+        background-color: v.$color-tertiary;
+    }
+}
